@@ -1,24 +1,24 @@
-# README
+# Serialization and `check_box_tag` in Rails 6
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
 
-Things you may want to cover:
+Clone and enter the directory.
 
-* Ruby version
+    git clone git@github.com:danielsellergren/tutorial-serialized-checkboxes.git
+    cd tutorial-serialized-checkboxes/
 
-* System dependencies
+Create and migrate the database.
 
-* Configuration
+    rails db:create
+    rails db:migrate
 
-* Database creation
+Start the server and open `https://localhost:3000/` in your browser.
 
-* Database initialization
+    rails server
 
-* How to run the test suite
+Navigate to the posts index and create your first post using the checkboxes to fill out the tag information.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Further
 
-* Deployment instructions
-
-* ...
+* Try creating another model and using it to generate the tags.
+* Format the tags in a different way, maybe use `parameterize` to standardize them for storage.
