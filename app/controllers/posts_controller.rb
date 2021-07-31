@@ -78,7 +78,7 @@ class PostsController < ApplicationController
 
     # We only want to store the tag names, so only keep the keys.
     def format_tags(parameters)
-      parameters[:tags] = parameters[:tags].keys
+      parameters[:tags] = parameters[:tags].keys if parameters[:tags].present?
       parameters
     end
 end
